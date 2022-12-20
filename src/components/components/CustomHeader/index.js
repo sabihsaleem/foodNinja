@@ -1,7 +1,7 @@
 import React from 'react';
 import {View, TouchableOpacity, Platform, Text, StyleSheet} from 'react-native';
 // import Icon from 'react-native-vector-icons/Ionicons';
-import {Colors, FontSizes} from '../../common';
+import {Colors, FontSizes} from '../../../common';
 import DeviceInfo from 'react-native-device-info';
 import {
   widthPercentageToDP as wp,

@@ -3,7 +3,7 @@ import {
   widthPercentageToDP as wp,
   heightPercentageToDP as hp,
 } from 'react-native-responsive-screen';
-import {Colors, FontSizes} from '../../common';
+import {Colors, FontSizes} from '../../../common';
 const styles = StyleSheet.create({
   header: {
     flexDirection: 'row',

@@ -8,6 +8,8 @@ import {
 export default StyleSheet.create({
   main: {
     flex: 1,
-    alignItems: 'center',
+  },
+  img: {
+    resizeMode: 'cover',
   },
 });
