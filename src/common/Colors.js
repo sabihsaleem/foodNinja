@@ -3,6 +3,10 @@ const Colors = {
   Primary: '#FFAD1D',
   Secondry: '#DA6317',
   SecondryDark: '#09051C',
+  // PrimaryGreenLight: 'rgba(83, 232, 139, 1)',
+  // PrimaryGreenDark: 'rgba(21, 190, 119, 0.67)',
+  PrimaryGreenLight: '#53E88B',
+  PrimaryGreenDark: '#15BE77',
 
   /* basic */
   Black: '#000000',

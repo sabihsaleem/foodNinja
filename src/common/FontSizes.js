@@ -68,17 +68,17 @@ const FontSizes = {
   Labels: {
     fontSize: labels,
     fontFamily: Fonts.ComicNeueMedium,
-    color: Colors.TealBlue,
+    color: Colors.Black,
   },
   Body: {
     fontSize: body,
     fontFamily: Fonts.ComicNeueMedium,
-    color: Colors.TealBlue,
+    color: Colors.Black,
   },
   Regular: {
     fontSize: regular,
     fontFamily: Fonts.ComicNeueRegular,
-    color: Colors.TealBlue,
+    color: Colors.Black,
   },
   RegularRegular: {
     fontSize: regular,
@@ -90,6 +90,11 @@ const FontSizes = {
     fontFamily: Fonts.ComicNeueMedium,
     color: Colors.SecondryDark,
   },
+  BoldXBold: {
+    fontSize: xMedium,
+    fontFamily: Fonts.ComicNeueBold,
+    color: Colors.SecondryDark,
+  },
   BodyRegular: {
     fontSize: body,
     fontFamily: Fonts.ComicNeueRegular,
@@ -98,7 +103,7 @@ const FontSizes = {
   Small: {
     fontSize: small,
     fontFamily: Fonts.ComicNeueRegular,
-    color: Colors.TealBlue,
+    color: Colors.Black,
   },
 };
 export default FontSizes;

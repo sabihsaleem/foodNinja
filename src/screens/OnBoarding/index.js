@@ -1,11 +1,11 @@
 /* eslint-disable react-native/no-inline-styles */
 import React, {Component} from 'react';
-import {TouchableOpacity, Image, SafeAreaView, Text, View} from 'react-native';
+import {Image, SafeAreaView, Text, View} from 'react-native';
 import styles from './styles';
 import Swiper from 'react-native-swiper';
-import {images} from '../../assets';
-import {Colors} from '../../common';
-
+import {images} from '@assets';
+import {widthPercentageToDP as wp} from 'react-native-responsive-screen';
+import {CustomButton} from '@components';
 class OnBoarding extends Component {
   constructor(props) {
     super(props);
@@ -15,13 +15,15 @@ class OnBoarding extends Component {
         {
           title:
             'Here You Can find a chef or dish for every taste and color. Enjoy!',
-          header: 'Find your  Comfort Food here',
+          header: 'Find your Comfort Food here',
           swipeImg: images.onb,
+          width: wp('50%'),
         },
         {
           title: 'Enjoy a fast and smooth food delivery at your doorstep',
           header: 'Food Ninja is Where Your Comfort Food Lives',
           swipeImg: images.onb1,
+          width: wp('70%'),
         },
       ],
     };
@@ -47,8 +49,16 @@ class OnBoarding extends Component {
           return (
             <View style={styles.slide1}>
               <Image style={styles.img} source={item?.swipeImg} />
-              <Text style={styles.text}>{item?.header}</Text>
-              <Text style={styles.text}>{item?.title}</Text>
+              <Text
+                style={[
+                  styles.header,
+                  {
+                    width: item?.width,
+                  },
+                ]}>
+                {item?.header}
+              </Text>
+              <Text style={styles.title}>{item?.title}</Text>
             </View>
           );
         })}
@@ -58,12 +68,12 @@ class OnBoarding extends Component {
 
   button = () => {
     return (
-      <TouchableOpacity
+      <CustomButton
+        title="Next"
         onPress={() => {
           onNext(this.props);
-        }}>
-        <Text>Next</Text>
-      </TouchableOpacity>
+        }}
+      />
     );
   };
 
