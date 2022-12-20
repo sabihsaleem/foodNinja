@@ -2,6 +2,7 @@ const images = {
   splash: require('./images/Desktop.png'),
   onb: require('./images/onBoarding.png'),
   onb1: require('./images/onBoarding1.png'),
+  pattern: require('./images/Pattern.png'),
 };
 
 const icons = {
