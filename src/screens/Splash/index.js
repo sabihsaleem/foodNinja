@@ -5,7 +5,7 @@ import {images} from '../../assets';
 class Splash extends Component {
   componentDidMount() {
     setTimeout(() => {
-      this.props.navigation.navigate('Login');
+      this.props.navigation.navigate('OnBoarding');
     }, 1000);
   }
 

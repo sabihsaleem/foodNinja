@@ -13,7 +13,8 @@ const Colors = {
   White: '#FFFFFF',
 
   /* Others */
-
+  ChefsHat: '#F4F4F5',
+  LavanderBlosssomGrey: '#3B3B3B',
   Brilliance: '#FDFDFD',
   Flawedwhite: '#FFFCFC',
   Redishwhite: '#FFFAFA',
