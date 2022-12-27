@@ -4,13 +4,13 @@ import {TouchableOpacity, Text} from 'react-native';
 import styles from './styles';
 import LinearGradient from 'react-native-linear-gradient';
 import {Colors} from '@common';
-const CustomButton = ({title, onPress}) => {
+const CustomButton = ({title, onPress, customStyles}) => {
   return (
     <LinearGradient
       colors={[Colors.PrimaryGreenLight, Colors.PrimaryGreenDark]}
       start={{x: 0, y: 0}}
       end={{x: 1, y: 0}}
-      style={styles.linearGradient}>
+      style={[styles.linearGradient, customStyles]}>
       <TouchableOpacity style={styles.btnNext} onPress={onPress}>
         <Text style={styles.btnNextText}>{title}</Text>
       </TouchableOpacity>

@@ -1,18 +1,7 @@
 import React from 'react';
-import {
-  View,
-  Image,
-  TextInput,
-  StyleSheet,
-  TouchableOpacity,
-  Platform,
-} from 'react-native';
-import {
-  heightPercentageToDP as hp,
-  widthPercentageToDP as wp,
-} from 'react-native-responsive-screen';
+import {View, Image, TextInput, TouchableOpacity} from 'react-native';
 import {icons} from '../../assets';
-import {Colors, FontSizes} from '../../common';
+import {Colors} from '@common';
 import styles from './styles';
 
 const CustomTextInput = ({
@@ -35,9 +24,10 @@ const CustomTextInput = ({
   maxLength = null,
   onSubmitEditing,
   reference,
+  mainViewStyle = {},
 }) => {
   return (
-    <View style={[styles.container, {backgroundColor}]}>
+    <View style={[styles.container, {backgroundColor}, mainViewStyle]}>
       <View>
         {isLeft ? (
           <TouchableOpacity

@@ -38,6 +38,8 @@ class Login extends Component {
           placeholderTextColor={Colors.LavanderBlosssomGrey}
           returnKeyType={'next'}
           isLeft={false}
+          mainViewStyle={styles.mainViewStyle}
+          styleTextInput={styles.customTextInput}
         />
         <CustomTextInput
           title={'Password'}
@@ -45,6 +47,7 @@ class Login extends Component {
           placeholderTextColor={Colors.LavanderBlosssomGrey}
           returnKeyType={'next'}
           isLeft={false}
+          styleTextInput={styles.customTextInput}
         />
       </View>
     );
@@ -60,7 +63,7 @@ class Login extends Component {
   };
 
   button = () => {
-    return <CustomButton title="Login" />;
+    return <CustomButton title="Login" customStyles={styles.button} />;
   };
 
   render() {

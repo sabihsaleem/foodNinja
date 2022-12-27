@@ -38,7 +38,7 @@ node_modules/
 npm-debug.log
 yarn-error.log
 yarn.lock/
-Podfile.lock/
+/Podfile.lock/
 yarn.lock
 Podfile.lock
 package-lock.json

@@ -10,9 +10,13 @@ const icons = {
   splash: require('./images/Desktop.png'),
   eyeopen: require('./images/eyeopen.png'),
   eyeclosed: require('./images/eyeclosed.png'),
-  email: require('./images/email.png'),
+  email: require('./images/Email.png'),
+  Message: require('./images/Message.png'),
   facebook: require('./images/facebook.png'),
   google: require('./images/google.png'),
+  Profile: require('./images/Profile.png'),
+  Lock: require('./images/Lock.png'),
+  CheckListIcon: require('./images/CheckListIcon.png'),
 };
 
 export {images, icons};

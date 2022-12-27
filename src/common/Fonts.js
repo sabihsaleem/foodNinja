@@ -1,9 +1,10 @@
 const Fonts = {
-  ComicNeueBlack: 'ComicNeue-Black',
-  ComicNeueBold: 'ComicNeue-Bold',
-  ComicNeueLight: 'ComicNeue-Light',
-  ComicNeueMedium: 'ComicNeue-Medium',
-  ComicNeueRegular: 'ComicNeue-Regular',
-  ComicNeueThin: 'ComicNeue-Thin',
+  ComicNeueBlack: 'BentonSans Black',
+  ComicNeueBold: 'BentonSans Bold',
+  ComicNeueBook: 'BentonSans Book',
+  ComicNeueLight: 'BentonSans Light',
+  ComicNeueMedium: 'BentonSans Medium',
+  ComicNeueRegular: 'BentonSans Regular',
+  ComicNeueThin: 'BentonSans Thin',
 };
 export default Fonts;

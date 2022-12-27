@@ -11,8 +11,7 @@ export default StyleSheet.create({
     alignItems: 'center',
     marginVertical: hp('1.25%'),
     borderRadius: 10,
-    marginLeft: wp('7%'),
-    marginRight: wp('7%'),
+    marginHorizontal: wp('7%'),
   },
   defaultStyle: {
     flex: 1,
@@ -39,8 +38,8 @@ export default StyleSheet.create({
     marginRight: wp('4%'),
   },
   sideIcon: {
-    width: wp('4%'),
-    height: wp('4%'),
+    width: wp('6.1%'),
+    height: wp('6.1%'),
     resizeMode: 'contain',
   },
 });

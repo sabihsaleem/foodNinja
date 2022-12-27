@@ -3,16 +3,16 @@ import React, {Component} from 'react';
 import {SafeAreaView, Text, View} from 'react-native';
 import styles from './styles';
 
-class Home extends Component {
+class Template extends Component {
   render() {
     return (
       <SafeAreaView style={styles.main}>
         <View>
-          <Text>Home</Text>
+          <Text>Template</Text>
         </View>
       </SafeAreaView>
     );
   }
 }
 
-export default Home;
+export default Template;

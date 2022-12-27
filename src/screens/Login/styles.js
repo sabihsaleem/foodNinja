@@ -1,5 +1,5 @@
 import {StyleSheet} from 'react-native';
-import {Colors, FontSizes, Fonts} from '../../common';
+import {Colors, FontSizes, Fonts, globalStyles} from '../../common';
 import {
   widthPercentageToDP as wp,
   heightPercentageToDP as hp,
@@ -28,11 +28,14 @@ export default StyleSheet.create({
   container: {
     backgroundColor: Colors.White,
     flex: 1,
+    marginBottom: wp('10%'),
   },
   header: {
     ...FontSizes.ComicNeueMediumXXMedium,
     justifyContent: 'center',
     alignSelf: 'center',
+    marginBottom: wp('10%'),
+    marginTop: -wp('2%'),
   },
   contextText: {
     ...FontSizes.RegularRegular,
@@ -42,10 +45,21 @@ export default StyleSheet.create({
   row: {
     flexDirection: 'row',
   },
+  customTextInputContainer: {
+    marginVertical: wp('3%'),
+    ...globalStyles.shadow,
+  },
+  mainViewStyle: {
+    marginVertical: wp('0%'),
+  },
+  customTextInput: {
+    ...FontSizes.Body,
+    lineHeight: hp('1.65%'),
+  },
   socialContainer: {
     justifyContent: 'space-between',
-    marginLeft: wp('7%'),
-    marginRight: wp('7%'),
+    marginHorizontal: wp('7%'),
+    marginVertical: wp('5%'),
   },
   socailIconBtn: {
     alignItems: 'center',
@@ -56,14 +70,15 @@ export default StyleSheet.create({
     borderRadius: wp('4%'),
     borderWidth: 1,
     borderColor: Colors.White,
+    ...globalStyles.shadow,
   },
   socailIcon: {
     width: wp('6.5%'),
     height: wp('6.5%'),
     resizeMode: 'cover',
-    marginLeft: wp('3%'),
-    marginRight: wp('3%'),
+    marginHorizontal: wp('3%'),
   },
-  socailIconBtnText: {},
-  forgotPasword: {},
+  button: {
+    paddingHorizontal: wp('12%'),
+  },
 });

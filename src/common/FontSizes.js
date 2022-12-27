@@ -1,4 +1,7 @@
-import {heightPercentageToDP as hp} from 'react-native-responsive-screen';
+import {
+  widthPercentageToDP as wp,
+  heightPercentageToDP as hp,
+} from 'react-native-responsive-screen';
 import Colors from './Colors';
 import Fonts from './Fonts';
 
@@ -6,6 +9,7 @@ const bentonSansBold = hp('5.7%'); //48;
 const bentonSansMedium = hp('5.2%'); //42;
 const big = hp('4.01%'); //34;
 const extralarge = hp('3.95%'); //32;
+const large1 = wp('6.33%'); //25;
 const large = hp('3%'); //24;
 const xMedium = hp('2.7%'); //22;
 const xxMedium = hp('2.4%'); //20
@@ -30,6 +34,11 @@ const FontSizes = {
   regular,
   small,
   /* fontSizeWithFontFamily */
+  BentonSansBoldBold: {
+    fontSize: large1,
+    fontFamily: Fonts.ComicNeueBold,
+    color: Colors.SecondryDark,
+  },
   ComicNeueMediumXXBold: {
     fontSize: bentonSansBold,
     fontFamily: Fonts.ComicNeueBold,
@@ -83,6 +92,11 @@ const FontSizes = {
   RegularRegular: {
     fontSize: regular,
     fontFamily: Fonts.ComicNeueMedium,
+    color: Colors.SecondryDark,
+  },
+  RegularBook: {
+    fontSize: regular,
+    fontFamily: Fonts.ComicNeueBook,
     color: Colors.SecondryDark,
   },
   MediumXMedium: {
