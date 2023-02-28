@@ -8,9 +8,9 @@ const images = {
 
 const icons = {
   splash: require('./images/Desktop.png'),
-  eyeopen: require('./images/eyeopen.png'),
-  eyeclosed: require('./images/eyeclosed.png'),
-  email: require('./images/Email.png'),
+  // eyeopen: require('./images/eyeopen.png'),
+  // eyeclosed: require('./images/eyeclosed.png'),
+  email: require('./images/Email1.png'),
   Message: require('./images/Message.png'),
   facebook: require('./images/facebook.png'),
   google: require('./images/google.png'),

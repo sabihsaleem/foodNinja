@@ -73,6 +73,7 @@ class OnBoarding extends Component {
         onPress={() => {
           onNext(this.props);
         }}
+        customStyles={styles.button}
       />
     );
   };

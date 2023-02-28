@@ -32,4 +32,7 @@ export default StyleSheet.create({
     marginTop: wp('6%'),
     lineHeight: 20,
   },
+  button: {
+    paddingHorizontal: wp('12%'),
+  },
 });
